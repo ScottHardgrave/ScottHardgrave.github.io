@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mane Event</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 70%;
+        margin: auto;
+  }
+
+  </style>
+</head>
+<body>
+
+
+
+<!--<nav class="navbar navbar-success: #5cb85c"> -->
+  <!--<div class="container-fluid">
+    <div class="navbar-header"> -->
+        <nav id="header-navbar" class="early-brk navbar navbar-default"><a name="topOfPage"></a><div class="container_fluid top_nav center">
+            <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".header-collapse" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="http://www.southeastern.edu"><h1 style="margin:0;"><img src="Southeastern Logo" alt="Southeastern Logo" width="100%" /></h1></a>
+            </div>
+            <div class="collapse navbar-collapse header-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="https://www.southeastern.edu/apply/index.html">Apply</a></li>
+                  <li><a href="https://www.southeastern.edu/alumni_donors/alumni_assoc/index.html">Alumni</a></li>
+                  <li><a href="https://www.southeastern.edu/alumni_donors/foundation/index.html">Give</a></li>
+                  <li><a href="#" id="http://www.southeastern.edu/#" data-chat-id="stc">Chat</a></li>
+                  <li><a href="https://www.southeastern.edu/visit/index.html">Visit</a></li>
+                  <li><a href="https://www2.southeastern.edu/helios">Calendar</a></li>
+                  <li><a href="https://www.southeastern.edu/myden/">My Den</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+
+
+      <div id="main_nav_bar" class="early-brk navbar-collapse collapse header-collapse">
+        <div class="navbar center" id="dropdown_block">
+            <ul class="nav navbar-nav"><li class="dropdown"><a href="https://www.southeastern.edu/admin/admissions/index.html">ADMISSIONS</a>
+              <ul class="dropdown-content">
+                <li><a href="/apply/">Apply</a></li>
+                <li><a href="/admin/controller/tuition/index.html">Tuition/Fees</a></li>
+                <li><a href="/admin/fin_aid/net_price_calculator/">Cost Calculator</a></li>
+                <li><a href="/admin/fin_aid/">Financial Aid</a></li>
+                <li><a href="/admin/fin_aid/scholarships/">Scholarships</a></li>
+                <li><a title="Beginning Freshmen" href="/apply/freshmen/index.html">Undergraduates</a></li>
+                <li><a title="Transfer Students" href="/apply/transfer/index.html">Transfer Student</a></li>
+                <li><a href="/apply/graduate/index.html">Graduates</a></li>
+                <li><a href="/admin/admissions/parents/">For Parents</a></li>
+                <li><a href="/apply/high_school/index.html">High School Students</a></li>
+                <li><a title="Records and Registration" href="/admin/rec_reg/index.html">Records &amp; Registration</a></li>
+              </ul>
+              </li>
+
+
+ <li class="dropdown"><a href="https://www.southeastern.edu/acad_research/index.html">ACADEMICS</a>
+          <ul class="dropdown-content">
+          <li><a href="/acad_research/colleges/">Colleges &amp; Departments</a></li>
+          <li><a href="/acad_research/degrees/">Majors &amp; Minors</a></li>
+          <li><a title="Online Learning" href="/acad_research/programs/online_learning/">Online Learning<br /></a></li>
+          <li><a href="/acad_research/programs/">Related Programs</a></li>
+          <li><a href="/acad_research/resources/">Resources</a></li>
+          <li><a href="/admin/rec_reg/university_catalogue/">Catalogue</a></li>
+          <li><a title="Schedule of Classes" href="/admin/rec_reg/class_schedule/index.html">Schedule of Classes</a></li>
+          <li><a href="/acad_research/research/">Research</a></li>
+          <li><a href="/library/">Library</a></li>
+        </ul>
+ </li>
+<li class="dropdown"><a href="https://www.southeastern.edu/campus_life/index.html">CAMPUS LIFE</a>
+  <ul class="dropdown-content">
+  <li><a href="/admin/housing/">Housing</a></li>
+  <li><a href="/admin/dining/">Dining</a></li>
+  <li><a title="Health Center" href="/admin/health_ctr/index.html">Health &nbsp;Center</a></li>
+  <li><a href="/admin/transport/">Parking</a></li>
+  <li><a href="/admin/rec_sports/index.html">Rec Center</a></li>
+  <li><a title="Emergency Alert" href="/about/safe_campus/alert/index.html">Emergency Alert</a></li>
+  <li><a href="https://jobs.selu.edu/applicants/jsp/shared/Welcome_css.jsp">Employment</a></li>
+  <li><a href="http://southeastern.university-tour.com/">Virtual Tour</a>
+  <script type="text/javascript" src="https://www.youvisit.com/tour/Embed/js2" defer="defer"></script>
+  </li>
+  <li><a href="/admin/stu_affairs/">Student Affairs</a></li>
+  </ul>
+</li>
+<li class="dropdown"><a href="http://www.lionsports.net/">ATHLETICS</a>
+  <ul class="dropdown-content">
+  <li><a href="http://lionsports.net/sports/2014/10/27/ticketinfo.aspx">Tickets</a></li>
+  <li><a href="http://www.lionsports.net/">Upcoming Events</a></li>
+  <li><a href="http://www.greenandgoldgear.com/">Lion Gear</a></li>
+  <li><a href="http://www.lionsports.net/photo_gallery.aspx">Photo Gallery</a></li>
+  <li><a href="http://www.lionsports.net/">View Site</a></li>
+  </ul>
+</li>
+<li class="dropdown"><a href="https://www.southeastern.edu/about/index.html">ABOUT</a>
+ <ul class="dropdown-content">
+ <li><a href="/about/history/">History</a></li>
+ <li><a href="/admin/">Administration</a></li>
+ <li><a title="Administrative Offices" href="/admin/admin_offices/index.html">All Admin Offices</a></li>
+ <li><a href="/about/general/accreditation/">Accreditation</a></li>
+ <li><a href="/about/general/">General Info</a></li>
+ <li><a href="/about/safe_campus/">Safe Campus</a></li>
+ <li><a href="/about/outreach/index.html">Outreach</a></li>
+ </ul>
+</li>
+ <li class="dropdown"><a href="/news_media/index.html">NEWS</a></li>
+ 
+
+ </ul>
+
+
+
+
+
+    <!--<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Admission</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Campus Life</a></li>
+        <li><a href="#">Athletics</a></li>
+        <li><a href="#">Campus Life</a></li>
+        <li><a href="#">News</a></li>
+
+      </ul>
+    </div>-->
+  </div>
+</nav>
+
+<div class="container">
+    <div class="jumbotron">
+      <h1>Mane Experience</h1>
+      <img src="sluManeExpMainPic.png" class="img-rounded" alt="Cinque Terre"> 
+      <p>Welcome, Class of 2022! Your first year at Southeastern is an exciting time and will be filled with lots of academic and personal discovery, fresh experiences, and new friendships. 
+
+          Now that you've mastered orientation, let the Mane Experience help you get the most out of your first year as a Lion! Each part of the Mane Experience goes hand-in-hand with what you’re learning in your classes and allows you to create a dynamic experience outside of the classroom.
+          
+          Let the Mane Experience be your go-to website to find the various services, resources, and upcoming events important for a successful freshman year!   </p>
+    </div>
+  </div>
+
+<div class="container">
+  <!--<div class="row">-->
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Mane Experience</h2>
+      <p>Welcome, Class of 2022! Your first year at Southeastern is an exciting time and will be filled with lots of academic and personal discovery, fresh experiences, and new friendships. 
+
+        Now that you've mastered orientation, let the Mane Experience help you get the most out of your first year as a Lion! Each part of the Mane Experience goes hand-in-hand with what you’re learning in your classes and allows you to create a dynamic experience outside of the classroom.
+        
+        Let the Mane Experience be your go-to website to find the various services, resources, and upcoming events important for a successful freshman year!   </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Freshmen Resources</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#">Student Engagement</a></li>
+        <li><a href="#">Finanacial Aid</a></li>
+        <li><a href="#">University Housing</a></li>
+        <li><a href="#">Dining Services</a></li>
+        <li><a href="#">Center For Student Excellence</a></li>
+        <li><a href="#">Campus Happenings</a></li>
+        <li><a href="#">Campus Services</a></li>
+        <li><a href="#">Textbook Rental</a></li>
+        <li><a href="#">Student Handbook</a></li>
+        <li><a href="#">Campus Map</a></li>
+      </ul>
+      <hr class="hidden-sm hidden-md hidden-lg">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>Upcoming Mane Events</h2>
+
+      <!--<div class="container"> -->
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+      
+            <div class="item active">
+              <img src="lionUp.png" alt="Chania" width="460" height="345">
+              <div class="carousel-caption">
+                <font color="black">
+                <h3>Lion Pride Preview</h3>
+                <p>This is a chance to look into the university and experience what it would be like to be a student</p>
+                <p>Location - Student Union Ballroom</p>
+                <p>URL - https://selu.edu/temp/not/a/link</p>
+                <p>Event Date/Time - 11/17/2018</p>
+                </font>
+              </div>
+            </div>
+      
+            <div class="item">
+              <img src="majorMinorFair.jpg" alt="Chania" width="460" height="345">
+              <div class="carousel-caption">
+                <font color="black">
+                <h3>Major/Minor Fair</h3>
+                <p>Did you know that MOST students don't graduate in their first major. Come check out what else SLU offers.</p>
+                <p>Location - Fayard 101</p>
+                <p>URL - https://selu.edu/this/aint/no/link/either</p>
+                <p>Event Date/Time - 12/25/2018</p>
+                </font>
+              </div>
+            </div>
+          
+
+        
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      </div>
+
+
+      <!--
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+    
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="lionUp.png" alt="Lion Up" style="width:100%;">
+            <h1>Lion Pride Preview</h1>
+          </div>
+    
+          <div class="item">
+            <img src="majorMinorFair.jpg" alt="Major Fair" style="width:100%;">
+            <h1>Major/Minor Fair</h1>
+          </div>
+
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        -->
+        
+
+
+      <!--
+      <h5>Lion Pride Preview</h5>
+      <p>This is a chance to look into the university and experience what it would be like to be a student</p>
+      <p>Location - Student Union Ballroom</p>
+      <p>URL - https://selu.edu/temp/not/a/link</p>
+      <p>Event Date/Time - 11/17/2018</p>
+    </div>
+    <div class="col-sm-4">
+      <h2>Upcoming Mane Events</h2>
+      <h5>Major and Minor Fair</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Did you know that MOST students don't graduate in their first major. Come check out what else SLU offers.</p>
+      <p>Location - Fayard 101</p>
+      <p>URL - https://selu.edu/this/aint/no/link/either</p>
+      <p>Event Date/Time - 12/25/2018</p>
+    </div>
+  -->
+
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h2>Pathways To Success</h2>
+      <h5>Whether you live on campus, in the local area or commute from several miles away, we want to help you "Connect" with campus by designing your freshman year around: Academic Success, Personal Safety & Wellness, Student Engagement, and Lion Pride! Click the images below to see what is available for you. </h5>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="academicSuccess.jpg" alt="Lights" style="width:100%">
+              <div class="caption">
+                <p>Academic Success</p>
+              </div>
+            </a>
+          </div>
+        </div>
+          <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="#" target="_blank">
+                  <img src="personalSafetyAndWellness.jpg" alt="Lights" style="width:100%">
+                  <div class="caption">
+                    <p>Personal Safety And Wellness</p>
+                  </div>
+                </a>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="#" target="_blank">
+                  <img src="studentEngagement.jpg" alt="Lights" style="width:100%">
+                  <div class="caption">
+                    <p>Student Engagement</p>
+                  </div>
+                </a>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="#" target="_blank">
+                  <img src="lionPride.jpg" alt="Lights" style="width:100%">
+                  <div class="caption">
+                    <p>Lion pride</p>
+                  </div>
+                </a>
+              </div>
+          </div>
+      <!--
+      <img src="academicSuccess.jpg" class="img-rounded" alt="Cinque Terre"> 
+      <img src="personalSafetyAndWellness.jpg" class="img-rounded" alt="Cinque Terre"> 
+      <img src="studentEngagement.jpg" class="img-rounded" alt="Cinque Terre"> 
+      <img src="lionPride.jpg" class="img-rounded" alt="Cinque Terre"> 
+      -->
+      
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+          <h2>Contact Information</h2>
+          <h5>Lion Pride Preview</h5>
+          <p>This is a chance to look into the university and experience what it would be like to be a student</p>
+          <p>Location - Student Union Ballroom</p>
+          <p>URL - https://selu.edu/temp/not/a/link</p>
+          <p>Event Date/Time - 11/17/2018</p>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>
+    Member of the University of Louisiana System  | Accredited by the Southern Association of Colleges and Schools Commission on Colleges (SACSCOC)
+    © 2018 Southeastern Louisiana University  |  All Rights Reserved
+    </p>
+</div>
+
+</body>
+</html>
